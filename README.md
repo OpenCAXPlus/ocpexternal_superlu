@@ -1,8 +1,6 @@
-# OpenCAX+ External Template
+# OpenCAX+ External: SuperLU
 
-This is a template repository for external dependencies of the OpenCAX+ projects.
-
-External dependencies are used for both toolkits or starters of the OpenCAX+ SDK.
+The SuperLU source code can be found [here](https://github.com/xiaoyeli/superlu).
 
 ## Learn how to create the external project for OpenCAX+
 
@@ -10,7 +8,7 @@ Read our tutorial or watch the tutorial video (both coming soon).
 
 ## Things that you need to modify
 
-- [ ] This README.md file, also remember to add the workflow badge
+- [x] This README.md file, also remember to add the workflow badge
 - [ ] The workflow yml files, change the name of workflow
 - [ ] The ocp.yml file
 - [ ] scripts/prepare.sh
