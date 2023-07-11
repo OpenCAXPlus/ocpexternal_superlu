@@ -1,4 +1,4 @@
-name: External Build
+name: SuperLU Build
 defaults:
   run:
     shell: bash -ileo pipefail {0}
