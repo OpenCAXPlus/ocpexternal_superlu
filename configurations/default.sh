@@ -9,5 +9,7 @@ source_dir="$script_dir/../source"
 build_dir="$script_dir/../build/$config"
 install_dir="$script_dir/../install/$config"
 
-cmake -S $source_dir -B $build_dir -DCMAKE_INSTALL_PREFIX=$install_dir
+cmake -S $source_dir -B $build_dir -G Ninja -DCMAKE_INSTALL_PREFIX=$install_dir \
+    -DBLAS_LIBRARIES=$HOME/ocp/external/openblas/0.3.23/install/default/lib/libopenblas.a
+
 cmake --build $build_dir --target install

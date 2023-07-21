@@ -21,7 +21,16 @@ scripts: # some scripts that developers may run
   - id: check
     run: scripts/check
     arguments: ["@version","@uid"]
+dependencies:
+  - id: "openblas"
+    uid: "openblas"
+    type: external
+    versions: 
+      - id: "0.3.23"
+        default: "default"
+        configurations: ["default"]
 configurations: # list of configs that is referred in by the versions
   - id: "default" # if no dependencies are listed, then use the default value
     run: configurations/default # must have a run to specify which script to run
     arguments: ["@version","@uid"]
+    dependencies: ["openblas@0.3.23@default"]
